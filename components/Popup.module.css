@@ -1,0 +1,46 @@
+.show{
+    display: revert;
+    
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 0.125s;
+}
+.hide{
+    display: none;
+    opacity: 0;
+}
+.modal{
+    z-index: 3;
+    position: fixed;
+    width: 950px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdc9b0;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
+.door{
+    top: 115px;
+    left:325px ;
+    position: fixed;
+    z-index: 999;
+    float: left;
+    width: 52px;
+    height: 85px;
+    background-color: rgba(231, 233, 215, 0);
+}
+.door:hover{
+    background: radial-gradient(rgba(228, 239, 143, 0.348),rgba(228, 239, 143, 0)) ;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

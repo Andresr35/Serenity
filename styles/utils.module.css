@@ -1,0 +1,90 @@
+.show{
+  display:revert;
+}
+.hide{
+  display: none;
+}
+
+.center{
+  text-align: center;
+}
+.video{
+  border-radius: 40px;
+  width: 100%;
+  margin-right: 1%;
+  margin-left:auto;
+}
+/** clamp for media width **/
+.button{
+  color:rgb(67, 74, 57); 
+  padding: 1%;
+  background-color:rgba(67, 74, 57, 0.075 );
+  border-radius: 100px;
+  border-color: rgba(67, 74, 57, 0.075 );
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.button:hover{
+  text-decoration: none;
+  background-color:rgba(67, 74, 57, 0.1 ); ;
+}
+
+.contentPadding{
+  padding: 1% 2%;
+  overflow: hidden;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+
+.quote {
+  opacity: 0;
+}
+
+.quote.show {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+/** This is for the second quote "with me" just to take a bit more to appear */
+.inline {
+  animation-delay: 0.5s;
+}
+.header{
+  animation-name: fade;
+  animation-delay: 5s;
+}
+ /** this is for the quotes */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .fade{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}} */
