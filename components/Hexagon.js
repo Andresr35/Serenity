@@ -23,15 +23,15 @@ const Hexagon = () => {
                 } else {
                     rights = (84 * i) - 60;
                 }
-                delay = (Math.random()/3)+(row/3)+0.75;
+                delay = (Math.random() / 3) + (row / 3) + 0.75;
 
                 items.push(
                     <>
                         <img className={styles.hex}
-                            style={{ top: `${tops}px`, left: `${rights}px`,animationDelay:`${delay}s` }}
+                            style={{ top: `${tops}px`, left: `${rights}px`, animationDelay: `${delay}s` }}
                             src="/images/ex.png" alt="hexagon" />
                         <img className={styles.fill}
-                            style={{ top: `${tops}px`, left: `${rights}px`,animationDelay:`${delay}s` }}
+                            style={{ top: `${tops}px`, left: `${rights}px`, animationDelay: `${delay}s` }}
                             src="/images/hexFill.png" alt="hexagon" />
                     </>
                 )
@@ -45,13 +45,15 @@ const Hexagon = () => {
             <div>
                 {listOfHex()}
             </div>
-
-            <video autoPlay muted loop className={utilStyles.video + ' ' + styles.video}>
-                <source src='/videos/Main_1.mp4' />
-            </video>
+            <div className={styles.iframe}>
+                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                    <iframe  className={styles.video} src="https://player.vimeo.com/video/838418567?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} title="Main_2">
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
         </div>
-
     )
 }
-
 export default Hexagon
