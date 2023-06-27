@@ -118,8 +118,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Used heroicons for some svg stuff
-- [ ] Feature 2
-- [ ] Feature 3
+- [ ] Some three.js
+- [ ] fffuel.co for some noise
+- [ ] Sketchfab
     - [ ] Nested Feature
 - Used realtimecolors to help pick my colors
 

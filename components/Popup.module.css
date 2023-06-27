@@ -1,23 +1,22 @@
 .show{
     display: revert;
-    
     animation-name: fadeIn;
     animation-fill-mode: forwards;
-    animation-duration: 0.125s;
+    animation-duration: 0.5s;
 }
 .hide{
     display: none;
     opacity: 0;
 }
 .modal{
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     width: 950px;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bdc9b0;
+    background-color:var(--accent);
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
@@ -38,9 +37,11 @@
 }
 @keyframes fadeIn {
     0%{
+        top: 100%;
         opacity: 0;
     }
     100%{
+        top:50%;
         opacity: 1;
     }
 }

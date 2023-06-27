@@ -89,7 +89,7 @@ button {
   animation-fill-mode: forwards;
 }
 .texture{
-  background-image: url("/images/nnnoise.svg");
+  /* background-image: url("/images/nnnoise.svg"); */
 }
 @keyframes fadein {
   0% {

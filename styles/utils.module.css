@@ -16,19 +16,18 @@
 }
 /** clamp for media width **/
 .button{
-  color:rgb(67, 74, 57); 
+  color:var(--text); 
   padding: 1%;
-  background-color:rgba(67, 74, 57, 0.075 );
-  border-radius: 100px;
-  border-color: rgba(67, 74, 57, 0.075 );
+  background-color:var(--secondary-button);
+  border-radius: 20px;
+  border-color: var(--accent);
   margin-bottom: 30px;
   display: inline-block;
 }
 .button:hover{
   text-decoration: none;
-  background-color:rgba(67, 74, 57, 0.1 ); ;
+  background-color:var(--primary-button) ;
 }
-
 .contentPadding{
   padding: 1% 2%;
   overflow: hidden;

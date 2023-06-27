@@ -75,7 +75,7 @@ const QuoteScrolling = () => {
                     {/* This is the div that holds the quotes - the one in the top div*/}
                     <div className='container' >
                         <img
-                            style={{opacity:'0.5'}}
+                            style={{opacity:'0.5',width:'20%'}}
                             src="/images/smoke.png"
                             alt="incense smoke"
                         />

@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import QuoteScrolling from '../components/QuoteScrolling';
 import Popup from '../components/Popup';
 import { useState } from 'react';
 import Hexagon from '../components/Hexagon';
+import styles from '../styles/Home.module.css'
 import Noise from '../components/Noise';
 
 
@@ -13,12 +14,12 @@ export default function Home() {
 
   return (
     < >
+    <Noise/>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <div className={utilStyles.contentPadding + " fade texture " + (show?utilStyles.blur: '')}>
-
-        <h1>Serenity</h1>
+        <h1 className={styles.titleAnimationDelay}>Serenity</h1>
         <div className='container'>
           <div style={{ flexBasis: '19%' }}>
             <img
@@ -34,7 +35,7 @@ export default function Home() {
               </div>
 
               <div style={{ flexBasis: '20%', marginTop: '40%', textAlign: 'center' }}>
-                <h4 className={utilStyles.header} >Scroll down :)</h4>
+                <h4 className={utilStyles.header + ' ' + styles.animationDelay} >Scroll down :)</h4>
                 {/** #TODO Lets make this h4 tag fade in a bit after the initial fade */}
               </div>
             </div>
@@ -45,6 +46,7 @@ export default function Home() {
         <Popup show={show} close = {setShow}>
 
         </Popup>
+        
         <div className={utilStyles.center}><button className={utilStyles.button} onClick={()=>setShow(true)}>{`It's okay. Let's go:) -->`}</button></div>
       
 
@@ -91,6 +93,11 @@ export default function Home() {
    * comes up. Maybe a scroll bar on the left with the basic buttons for most shops. Try to make it less like a nav bar though. Something minimalistic
    * but obviously still a navbar for people to use.
    * 
+   * 
+   * 
+   * The posters can be around the threedot js model. As you move around you find the different 
+   * products. It would be cool if instead of the windows thing, it was a portal going into this
+   * model of a forest or a house.
    */
 
 }
